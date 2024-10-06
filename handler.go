@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-
 	"github.com/google/uuid"
 	"github.com/labstack/echo/v4"
 )
@@ -56,7 +55,6 @@ func GetStudent(ctx echo.Context) error {
 	})
 }
 
-// handler.go
 func CreateStudent(ctx echo.Context) error {
 	studentRequest := new(StudentRequest)
 	if err := ctx.Bind(studentRequest); err != nil {

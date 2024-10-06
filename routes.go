@@ -2,6 +2,7 @@ package main
 
 import "github.com/labstack/echo/v4"
 
+//endpoint
 func Route(e *echo.Echo) {
 	user := e.Group("students")
 	user.GET("", GetStudents)

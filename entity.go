@@ -2,6 +2,7 @@ package main
 
 import "github.com/google/uuid"
 
+//tabel database
 type Student struct {
 	ID          uuid.UUID `gorm:"type:uuid;primaryKey" json:"id"`
 	Name        string    `json:"name"`
